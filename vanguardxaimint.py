@@ -58,6 +58,7 @@ tokenid = 0
 while True:
     while tokenid !=41:
         resultmints = mints(wallet, tokenid)
+        print(resultmints.status_code)
         os.system('clear')
         while resultmints.status_code != 200:
             resultmints = mints(wallet, tokenid)
